@@ -1,0 +1,35 @@
+{
+    "gitbook": ">=2.0.0",
+    "title": "GitBook Template",
+    "description": "Plantilla para la creación de documentación con GitBook",
+    "variables": {},
+    "links": {
+        "sidebar": {
+            "inyenia": "http://www.inyenia.com"
+        },
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "weibo": false,
+            "all": false
+        }
+    },
+    "pdf": {
+        "pageNumbers": true,
+        "fontSize": 10,
+        "paperSize": "a4",
+        "margin": {
+            "right": 32,
+            "left": 32,
+            "top": 32,
+            "bottom": 52
+        },
+        "headerTemplate": " ",
+        "footerTemplate": "<div style=\"margin-top: 10px;\"> <hr style=\"border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);\"/> <span style=\"display: inline;margin-left: 10px;color: #8B8B88;\">_SECTION_</span> <span style=\"display: inline;float: right;margin-right: 10px;color: #8B8B88;\">_PAGENUM_</span> </div>"
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "pdf": "styles/pdf.css"
+    }
+}
