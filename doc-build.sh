@@ -1,21 +1,26 @@
 #!/bin/bash
+VERSION="1.0"
 
-MVN_VERSION=$(mvn -q \
-    -Dexec.executable="echo" \
-    -Dexec.args='${project.version}' \
-    --non-recursive \
-    org.codehaus.mojo:exec-maven-plugin:1.3.1:exec)
+if [ -n "$1" ]; then
+    VERSION=$1
+else
+    VERSION=$(mvn -q \
+      -Dexec.executable="echo" \
+      -Dexec.args='${project.version}' \
+      --non-recursive \
+      org.codehaus.mojo:exec-maven-plugin:1.3.1:exec)
+fi
 
-echo "Viafirma Core version: "$MVN_VERSION
+echo "Build version: "$VERSION
 
 rm -rf doc/html
 
-echo "Build doc $MVN_VERSION version in " `pwd`
+echo "Build doc $VERSION version in " `pwd`
 
 echo "Add update date and version"
 search='#*#version_info#*#'
 now=$(date +"%d\/%m\/%Y")
-replace="Versión\ $MVN_VERSION\ actualizado\ el\ $now"
+replace="Versión\ $VERSION\ actualizada\ el\ $now"
 echo "Replace $search with $replace"
 for file in `find 'doc/es/README.md'`; do
   grep "$search" $file &> /dev/null
