@@ -1,23 +1,22 @@
 # Cómo colaborar con la documentación
 
-La documentación se genera haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
+Esta documentación se genera haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
 
 Para modificar la documentación solo hay que añadir o modificar uno de los fichero .md existentes dentro de la carpeta doc de este proyecto, puedes consultar la sintasis desde [Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
-También se puede descargar el app de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
+Puedes descargar el editor de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
 
 Si necesitas añadir imágenes, puedes añadirlas dentro de la carpeta resources. Añadir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.
 
-Puedes añadir la imágen con el siguiente código
+Puedes añadir la imágenes con el siguiente código
 
 ```
-![Viafirma Platform](resources/viafirma-platform.png)
+![Image demo](resources/keep-calm-portada.jpg)
 ```
-Una vez modificada o añadida la documentación puedes hacer pull request de los cambios, una vez revisados los cambios y realizado el merge en master se ejecutará la siguiente tarea de Jenkins http://dev.viafirma.com/jenkins/XXXXXX/ que genera el nuevo documento en formato pdf y actualizará la documentación online en formato html.
 
 Si añades una nueva sección al documento recuerda que tienes que añadirla en el fichero ./doc/SUMMARY.md si no utilizas el editor de GitBook.
 
-### Actualizar documentación desde Mac OSX
+### Generar documentación en formato PDF y HTML
 
 Esta documentación esta genereda con la versión 2.1.0 de GitBook si tienes instalado en tu equipo una versión inferior a la 2.0.0 necesitas desistalar la antigua versión de GitBook con el siguiente comando.
 
@@ -51,7 +50,7 @@ export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
 
 Para facilitar la integración con GitBook se ha preparado el shell script ./doc-build.sh que realiza lo siguiente:
 
-* Añade en el README.md la versión del pom de viafirma-core y la fecha actual
+* Añade en el README.md la versión del pom de tu proyecto o la versión indicada como parámetro y la fecha actual
 * Genera páginas html
 * Genera PDF
 
@@ -59,6 +58,12 @@ Por los que si tienes instalado GitBook y Calibre en tu equipo según lo explica
 
 ````
 ./doc-build.sh
+````
+
+Puedes insdicar la versión de la documentación a generar
+
+````
+./doc-build.sh 1.0.1
 ````
 
 #### Configuración de GitBook

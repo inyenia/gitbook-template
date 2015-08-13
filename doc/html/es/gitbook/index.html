@@ -38,7 +38,7 @@
     <body>
         
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Thu Aug 13 2015 18:20:22 GMT+0200 (CEST)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Thu Aug 13 2015 18:38:03 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -192,15 +192,14 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="c%C3%B3mo-colaborar-con-la-documentaci%C3%B3n">C&#xF3;mo colaborar con la documentaci&#xF3;n</h1>
-<p>La documentaci&#xF3;n se genera haciendo uso de markdown y GitBook <a href="https://github.com/GitbookIO/gitbook" target="_blank">GitBook</a></p>
+<p>Esta documentaci&#xF3;n se genera haciendo uso de markdown y GitBook <a href="https://github.com/GitbookIO/gitbook" target="_blank">GitBook</a></p>
 <p>Para modificar la documentaci&#xF3;n solo hay que a&#xF1;adir o modificar uno de los fichero .md existentes dentro de la carpeta doc de este proyecto, puedes consultar la sintasis desde <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown Guide</a></p>
-<p>Tambi&#xE9;n se puede descargar el app de GitBook para tu sistema operativo desde <a href="https://github.com/GitbookIO/editor/releases" target="_blank">https://github.com/GitbookIO/editor/releases</a> una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.</p>
+<p>Puedes descargar el editor de GitBook para tu sistema operativo desde <a href="https://github.com/GitbookIO/editor/releases" target="_blank">https://github.com/GitbookIO/editor/releases</a> una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.</p>
 <p>Si necesitas a&#xF1;adir im&#xE1;genes, puedes a&#xF1;adirlas dentro de la carpeta resources. A&#xF1;adir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.</p>
-<p>Puedes a&#xF1;adir la im&#xE1;gen con el siguiente c&#xF3;digo</p>
-<pre><code>![Viafirma Platform](resources/viafirma-platform.png)
-</code></pre><p>Una vez modificada o a&#xF1;adida la documentaci&#xF3;n puedes hacer pull request de los cambios, una vez revisados los cambios y realizado el merge en master se ejecutar&#xE1; la siguiente tarea de Jenkins <a href="http://dev.viafirma.com/jenkins/XXXXXX/" target="_blank">http://dev.viafirma.com/jenkins/XXXXXX/</a> que genera el nuevo documento en formato pdf y actualizar&#xE1; la documentaci&#xF3;n online en formato html.</p>
-<p>Si a&#xF1;ades una nueva secci&#xF3;n al documento recuerda que tienes que a&#xF1;adirla en el fichero ./doc/SUMMARY.md si no utilizas el editor de GitBook.</p>
-<h3 id="actualizar-documentaci%C3%B3n-desde-mac-osx">Actualizar documentaci&#xF3;n desde Mac OSX</h3>
+<p>Puedes a&#xF1;adir la im&#xE1;genes con el siguiente c&#xF3;digo</p>
+<pre><code>![Image demo](resources/keep-calm-portada.jpg)
+</code></pre><p>Si a&#xF1;ades una nueva secci&#xF3;n al documento recuerda que tienes que a&#xF1;adirla en el fichero ./doc/SUMMARY.md si no utilizas el editor de GitBook.</p>
+<h3 id="generar-documentaci%C3%B3n-en-formato-pdf-y-html">Generar documentaci&#xF3;n en formato PDF y HTML</h3>
 <p>Esta documentaci&#xF3;n esta genereda con la versi&#xF3;n 2.1.0 de GitBook si tienes instalado en tu equipo una versi&#xF3;n inferior a la 2.0.0 necesitas desistalar la antigua versi&#xF3;n de GitBook con el siguiente comando.</p>
 <h6 id="desistalar-gitbook-con-npm">Desistalar GitBook con NPM</h6>
 <pre><code>$ npm uninstall -g gitbook
@@ -219,12 +218,14 @@ $ gitbook versions
 </code></pre><h4 id="actualizar-documentaci%C3%B3n">Actualizar documentaci&#xF3;n</h4>
 <p>Para facilitar la integraci&#xF3;n con GitBook se ha preparado el shell script ./doc-build.sh que realiza lo siguiente:</p>
 <ul>
-<li>A&#xF1;ade en el README.md la versi&#xF3;n del pom de viafirma-core y la fecha actual</li>
+<li>A&#xF1;ade en el README.md la versi&#xF3;n del pom de tu proyecto o la versi&#xF3;n indicada como par&#xE1;metro y la fecha actual</li>
 <li>Genera p&#xE1;ginas html</li>
 <li>Genera PDF</li>
 </ul>
 <p>Por los que si tienes instalado GitBook y Calibre en tu equipo seg&#xFA;n lo explicado anteriormente puedes ejecutar el shell script doc-build.sh en tu equipo.</p>
 <pre><code>./doc-build.sh
+</code></pre><p>Puedes insdicar la versi&#xF3;n de la documentaci&#xF3;n a generar</p>
+<pre><code>./doc-build.sh 1.0.1
 </code></pre><h4 id="configuraci%C3%B3n-de-gitbook">Configuraci&#xF3;n de GitBook</h4>
 <p>Desde el siguiete enlace se puede acceder a toda la documentaci&#xF3;n de GitBook <a href="http://help.gitbook.com" target="_blank">http://help.gitbook.com</a></p>
 <p>Los siguiente puntos son solo una peque&#xF1;a ayuda.</p>
