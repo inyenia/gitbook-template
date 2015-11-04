@@ -47,3 +47,6 @@ mv doc/book_es.pdf doc/html/es/book_es.pdf
 
 echo "Restore changes in .md"
 git checkout -- doc/es/README.md
+
+echo "Distribute doc"
+./doc-distribute.sh
