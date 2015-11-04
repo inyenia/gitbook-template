@@ -31,7 +31,10 @@ for file in `find 'doc/es/README.md'`; do
   fi
 done
 
-echo "Generate PDF"
+echo "Update Snippets"
+./doc-snippets-java.sh
+
+echo "Generate Doc"
 gitbook build ./doc
 gitbook pdf ./doc
 
