@@ -5,11 +5,11 @@ path="doc/es/snippets"
 search_snippets() {
  for i in "$1"/*;do
     if [ -d "$i" ];then
-        echo "dir: $i"
-        recurse "$i"
+        #echo "dir: $i"
+        search_snippets "$i"
     elif [ -f "$i" ]; then
       if [[ $i == *".java" ]];then
-          echo "file: $i"
+          #echo "file: $i"
           create_snippets $i
       fi
     fi
