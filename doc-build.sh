@@ -35,6 +35,7 @@ echo "Update Snippets"
 ./doc-snippets-java.sh
 
 echo "Generate Doc"
+gitbook install ./
 gitbook build ./doc
 gitbook pdf ./doc
 
