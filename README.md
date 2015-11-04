@@ -10,7 +10,9 @@ Puedes descargar el editor de GitBook para tu sistema operativo desde https://gi
 
 ##### Snippets de código
 
-Haciendo uso del script **doc-snippets-java.sh** puedes añadir snippets de código direntamente del código o los JUnit de tu aplicación a la documentación, el script buscará snippets en las clases java de los directorios src/main/java y src/test/java para crear un snippet en la clase java tenemos añadir lo siguiente
+Haciendo uso del script **doc-snippets-java.sh** puedes añadir snippets de código direntamente del código o los JUnit de tu aplicación a la documentación, el script buscará snippets en las clases java de los directorios src/main/java y src/test/java 
+
+Para crear un snippet en la clase java tenemos añadir lo siguiente
 
 ```java
 //<snippet name="example1">
