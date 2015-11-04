@@ -40,6 +40,7 @@ cp -rf doc/_book/ doc/html/
 rm -rf doc/_book/
 rm -f npm-debug.log
 rm -rf node_modules
+mv doc/book_es.pdf doc/html/es/book_es.pdf
 
 echo "Restore changes in .md"
 git checkout -- doc/es/README.md
