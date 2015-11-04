@@ -1,8 +1,8 @@
 # GitBook Template
 
-Puedes ver esta documentación online en https://inyenia.github.io/gitbook-template/ y descargarla en formato pdf desde https://inyenia.github.io/gitbook-template/book_es.pdf
-
 Proyecto 'plantilla' para la generación de documentación haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
+
+Puedes ver esta documentación online en https://inyenia.github.io/gitbook-template/ y descargarla en formato pdf desde https://inyenia.github.io/gitbook-template/book_es.pdf
 
 Para modificar la documentación solo hay que añadir o modificar uno de los fichero .md existentes dentro de la carpeta doc de este proyecto, puedes consultar la sintasis desde [Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
