@@ -1,12 +1,32 @@
 # GitBook Template
 
+Puedes ver esta documentación online en https://inyenia.github.io/gitbook-template/ y descargarla en formato pdf desde https://inyenia.github.io/gitbook-template/book_es.pdf
+
 Proyecto 'plantilla' para la generación de documentación haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
 
 Para modificar la documentación solo hay que añadir o modificar uno de los fichero .md existentes dentro de la carpeta doc de este proyecto, puedes consultar la sintasis desde [Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
-Puedes descargar el editor de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
+Puedes descargar el editor de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor-legacy/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
 
-Si necesitas añadir imágenes, puedes añadirlas dentro de la carpeta resources. Añadir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.
+##### Snippets de código
+
+Haciendo uso del script **doc-snippets-java.sh** puedes añadir snippets de código direntamente del código o los JUnit de tu aplicación a la documentación, el script buscará snippets en las clases java de los directorios src/main/java y src/test/java para crear un snippet en la clase java tenemos añadir lo siguiente
+
+```java
+//<snippet name="example1">
+System.out.println("Hello, World snippet 1");
+//</snippet>
+```
+
+Una vez ejecutado el script **doc-snippets-java.sh** se creará el fichero example1.md en el directorio doc/es/snippets para usar este snippet en nuestra documentación tenemos que añadir el siguiente código
+
+```
+!INCLUDE "snippets/example1.md"
+```
+
+##### Añadir imágenes
+
+Puedes añadirlas dentro de la carpeta resources. Añadir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.
 
 Puedes añadir la imágenes con el siguiente código
 
