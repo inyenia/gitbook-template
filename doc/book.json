@@ -5,7 +5,7 @@
     "variables": {},
     "links": {
         "sidebar": {
-            "inyenia": "http://www.inyenia.com"
+            "gitbook-template": "https://inyenia.github.io/gitbook-template"
         },
         "sharing": {
             "google": false,

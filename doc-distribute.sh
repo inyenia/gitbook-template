@@ -20,7 +20,7 @@ rm -rf /tmp/gitbook-template
 cd /tmp
 git clone git@github.com:inyenia/gitbook-template.git
 cd gitbook-template
-git checkout -b gitbook-template origin/gitbook-template
+git checkout -b gh-pages origin/gh-pages
 
 cd $path
 cp -Rf doc/html/es/* /tmp/gitbook-template/
@@ -30,6 +30,6 @@ mkdir -p /tmp/gitbook-template/$VERSION
 cp -Rf doc/html/es/* /tmp/gitbook-template/$VERSION/
 
 cd /tmp/gitbook-template
-git add -u .
+git add .
 git commit -m "update version $VERSION"
 git push origin gh-pages
