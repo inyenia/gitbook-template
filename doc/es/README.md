@@ -5,7 +5,8 @@ Versión 0.0.1 actualizada el 04/11/2015
 Ejemplo de documentación generada con GitBook puedes leer información de como modificar la documentación en la sección [Ayuda con GitBook](gitbook/README.md)
 
 Uso de snippets de código
-!INCLUDE snippets/example1.md
+
+!INCLUDE "snippets/example1.md"
 
 Imagen de ejemplo
 ![Demo image](resources/keep-calm-portada.jpg)
