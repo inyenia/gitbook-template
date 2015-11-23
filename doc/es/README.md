@@ -6,7 +6,7 @@ Ejemplo de documentación generada con GitBook puedes leer información de como 
 
 Uso de snippets de código
 
-!INCLUDE "snippets/example1.md"
+{% include "./snippets/example1.md" %}
 
 Imagen de ejemplo
 ![Demo image](resources/keep-calm-portada.jpg)

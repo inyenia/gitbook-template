@@ -1,4 +1,4 @@
-# Documentación de Viafirma Core
+# Plantilla para documentación
 
 La documentación se genera haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
 

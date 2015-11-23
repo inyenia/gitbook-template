@@ -4,16 +4,16 @@ package com.inyenia.doc;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
-    	//<snippet name="example1">
+      	//BEGIN-SNIPPET: example1
         System.out.println("Hello, World snippet 1");
-        //</snippet>
+        //END-SNIPPET
 
-        //<snippet name="example2">
+        //BEGIN-SNIPPET: example2
         System.out.println("Hello, World snippet 2");
-        //</snippet>
+        //END-SNIPPET
     }
 }
