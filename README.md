@@ -57,8 +57,6 @@ $ npm uninstall -g gitbook
 
 ```
 $ npm install -g gitbook-cli
-$ gitbook versions:install latest
-$ gitbook versions
 ```
 
 ###### Instalación de Calibre
