@@ -32,7 +32,7 @@ for file in `find 'doc/es/README.md'`; do
 done
 
 echo "Update Snippets"
-./doc-snippets-java.sh
+./snippets.sh java ./src ./doc/es/snippets
 
 echo "Generate Doc"
 gitbook install ./
