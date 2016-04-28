@@ -1,6 +1,6 @@
 # GitBook Template
 
-Versión 0.0.1 actualizada el 04/11/2015
+Versión {{ book.version }}, actualizada el {{ book.date }}
 
 Ejemplo de documentación generada con GitBook puedes leer información de como modificar la documentación en la sección [Ayuda con GitBook](gitbook/README.md)
 

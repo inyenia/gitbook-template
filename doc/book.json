@@ -2,7 +2,10 @@
     "gitbook": ">=2.0.0",
     "title": "GitBook Template",
     "description": "Plantilla para la creación de documentación con GitBook",
-    "variables": {},
+		"variables": {
+        "version" : "__version__",
+        "date" : "__date__"
+    },
     "links": {
         "sidebar": {
             "gitbook-template": "https://inyenia.github.io/gitbook-template"
